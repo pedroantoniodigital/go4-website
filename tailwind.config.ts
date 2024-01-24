@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'theme': '0px 20px 30px rgba(119, 101, 243, 0.2)'
+      },
+      boxShadow: {
+        'card': '0 35px 60px -15px rgba(119, 101, 243, 0.2)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
