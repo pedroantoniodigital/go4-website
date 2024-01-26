@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@mui/icons-material": "^5.15.4",
     "@mui/material": "^5.15.4",
     "framer-motion": "^10.18.0",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.4",
     "react-lottie-wrapper": "^1.1.8",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "tailwind-merge": "^2.2.0",
     "three": "^0.160.0"
@@ -27,6 +29,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
     "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",

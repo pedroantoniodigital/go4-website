@@ -8,7 +8,7 @@ import { Manfrota } from './components/manfrota';
 
 const Projects = () => (
     <main className="min-h-fit w-full m-0">
-      <div className='bg-[#150c21] h-fit flex justify-center w-[100%] text-white text-left text-3xl font-bold py-20'>
+      <div className='bg-primary-dark h-fit flex justify-center text-white text-left text-3xl font-bold py-20'>
         <div className='w-[50%] flex flex-col gap-4'>
           <span>Mais sobre nossos projetos</span>
           <span className='text-lg w-[40%] font-normal'>
@@ -20,17 +20,17 @@ const Projects = () => (
             diam bibendum fringilla.
           </span>
           <div className='flex flex-row gap-4'>
-            <div className='flex flex-col items-center text-sm col text-[#7765f3] cursor-pointer gap-4'>
-              <FireTruckOutlinedIcon sx={{ color: "#7765f3", width: 48, height: 48 }} />
+            <div className='flex flex-col items-center text-sm col text-primary-light cursor-pointer gap-4'>
+              <FireTruckOutlinedIcon sx={{ color: "#0065af", width: 48, height: 48 }} />
               Manfrota
             </div>
             <div className='flex flex-col items-center text-sm col text-[#b0bbcc] cursor-pointer gap-4'>
               <LockOutlinedIcon sx={{ color: "#b0bbcc", width: 48, height: 48 }} />
-              ?
+              Em breve
             </div>
             <div className='flex flex-col items-center text-sm col text-[#b0bbcc] cursor-pointer gap-4'>
               <LockOutlinedIcon sx={{ color: "#b0bbcc", width: 48, height: 48 }} />
-              ?
+              Em breve
             </div>
           </div>
         </div>

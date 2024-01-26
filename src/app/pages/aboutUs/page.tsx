@@ -6,11 +6,16 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import { AnimatedText } from '@/components/animation/page';
 
-const AboutUs = () => {
+type Props = {
+  id: string;
+};
+
+
+const AboutUs = ({ id }: Props) => {
 
   return (
     <>
-      <main className="min-h-screen items-center m-0 py-56 bg-[#150c21] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+      <main id="aboutUs" className="min-h-screen items-center m-0 py-56 bg-primary-dark bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
         <div className='flex flex-col items-center'>
           <AnimatedText
             once
@@ -27,64 +32,52 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className='flex flex-col mt-10'>
-            <div className='flex flex-row w-full justify-center items-center text-white gap-8'>
-              <div className='bg-white rounded-full w-16 h-16 flex items-center justify-center'>
-                <RocketLaunchIcon sx={{ color: "#150c21", width: 26, height: 26 }} />
+
+          <div className="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 my-20 px-5">
+              <div className="flex bg-primary-dark drop-shadow-theme p-8 rounded-xl gap-4 items-start flex-col ">
+                  <span className="text-white bg-white/10 p-3 rounded-full">
+                    <RocketLaunchIcon />
+                  </span>
+                  <div>
+                      <h3 className="font-semibold text-xl text-white"> Missão</h3>
+                      <p className="mt-1 text-gray-300"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae diam neque.
+                      </p>
+                  </div>
               </div>
-              <div className='flex flex-col'>
-                <AnimatedText
-                  once
-                  text="Missao"
-                  el="h1"
-                  className="font-bold text-lg"
-                />
-                <div>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. <br /> In
-                  luctus velit interdum ex faucibus venenatis.
-                </div>
+
+              <div className="flex bg-white p-8 rounded-xl gap-4 items-start flex-col ">
+                  <span className="text-primary-light bg-primary-light/10 p-3 rounded-full">
+                    <RemoveRedEyeIcon />
+                  </span>
+                  <div>
+                      <h3 className="font-semibold text-xl">Visão</h3>
+                      <p className="mt-1 text-gray-600"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae diam neque.
+                      </p>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div className='flex flex-col mt-10'>
-            <div className='flex flex-row w-full justify-center items-center text-right text-white gap-8'>
-              <div className='flex flex-col'>
-                <AnimatedText
-                  once
-                  text="Visão"
-                  el="h1"
-                  className="text-right font-bold text-lg"
-                />
-                <div>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. <br /> In
-                  luctus velit interdum ex faucibus venenatis.
-                </div>
+
+
+              <div className="flex bg-primary-dark drop-shadow-theme p-8 rounded-xl gap-4 items-start flex-col ">
+                  <span className="text-white bg-white/10 p-3 rounded-full">
+                    <FavoriteIcon />
+                  </span>
+                  <div>
+                      <h3 className="font-semibold text-xl text-white">Valores </h3>
+                      <p className="mt-1 text-gray-300"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae diam neque.
+                      </p>
+                  </div>
               </div>
-              <div className='bg-white rounded-full w-16 h-16 flex items-center justify-center'>
-                <RemoveRedEyeIcon sx={{ color: "#150c21", width: 26, height: 26 }} />
-              </div>
-            </div>
-          </div>
-          <div className='flex flex-col mt-10'>
-            <div className='flex flex-row w-full justify-center items-center text-white gap-8'>
-              <div className='bg-white rounded-full w-16 h-16 flex items-center justify-center'>
-                <FavoriteIcon sx={{ color: "#150c21", width: 26, height: 26 }} />
-              </div>
-              <div className='flex flex-col'>
-                <AnimatedText
-                  once
-                  text="Valores"
-                  el="h1"
-                  className="font-bold text-lg"
-                />
-                <div>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. <br /> In
-                  luctus velit interdum ex faucibus venenatis.
-                </div>
-              </div>
-            </div>
           </div>
 
+          <div className='flex w-[40%] justify-center text-center items-center text-lg font-medium text-[#d9d8db]'>
+            <p>
+              Com uma metodologia inovadora e tecnologia de ponta, oferece o que há de mais moderno 
+              em soluções para o segmento de <b className='text-white'>Manutenção</b> e <b className='text-white'>Gerenciamento de Frotas</b>.
+            </p>
+          </div>
         </div>
       </main>
     </>

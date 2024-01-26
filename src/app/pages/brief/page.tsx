@@ -8,7 +8,7 @@ const Brief = () => (
     <div className="flex flex-wrap justify-center w-100% md:w-[70%] gap-8">
       {/* PRIMEIRA DIV  */}
       <div className='w-[100%] text-black text-center text-3xl font-bold'>
-        Veja alguns <span className='text-[#705df2]'>depoimentos</span> de nossos <br/> parceiros
+        Veja alguns <span className='text-primary-light'>depoimentos</span> de nossos <br/> parceiros
       </div>
       
       <div className="border-[1px] border-gray-200 hover:shadow-card transition-all duration-500 cursor-pointer w-[100%] md:w-[28%] rounded-lg h-fit p-8">
