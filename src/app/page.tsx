@@ -1,30 +1,33 @@
-import NavBar from '@/app/pages/navbar/navbar';
-import LandingPage from './pages/landingPage/page';
-import AboutUs from './pages/aboutUs/page';
-import OurModules from './pages/modules/page';
-import OurTeam from './pages/team/page';
-import WhyUs from './pages/whyUs/page';
-import Footer from './pages/footer/page';
-import Brief from './pages/brief/page';
-import Projects from './pages/projects/page';
-import Questions from './pages/questions/page';
-import Areas from './pages/areas/page';
+import NavBar from '@/app/navbar/navbar';
+import LandingPage from './landingPage/page';
+import AboutUs from './aboutUs/page';
+import OurModules from './modules/page';
+import Footer from './footer/page';
+import Brief from './brief/page';
+import Projects from './projects/page';
+import Questions from './questions/page';
+import Areas from './areas/page';
+import OurTeam from './team/page';
+import WhyUs from './whyUs/page';
+import Clients from './clients/page';
+import RocketButton from '@/components/rocketButton/rocketButton';
 
 export default function App() {
 
   return (
     <>
-      <NavBar />
       <LandingPage />
-      <AboutUs id="aboutUs" />
+      <AboutUs />
       <OurTeam />
       <Areas />
       <Brief />
       <WhyUs />
       <Projects />
       <OurModules />
+      <Clients />
       <Questions />
       <Footer />
+      <RocketButton />
     </>
   );
 }
