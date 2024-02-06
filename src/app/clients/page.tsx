@@ -21,7 +21,6 @@ export default class SimpleSlider extends Component {
       centerPadding: "60px",
       slidesToScroll: 1,
       autoplay: true,
-      pauseOnHover: true,
       autoplaySpeed: 1500,
       nextArrow: <NextArrow />,
       prevArrow: <PrevArrow />,
@@ -29,7 +28,7 @@ export default class SimpleSlider extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
             dots: true
@@ -54,12 +53,16 @@ export default class SimpleSlider extends Component {
 
     return (
       <div id="clients" className=" flex flex-col items-center justify-center py-24 bg-gray-100">
-        <span className="font-bold text-3xl text-black">Nossos clientes</span>
-        <div style={{ width: "100%", marginTop: "5rem" }}> {/* Limitar a largura do contêiner do Slider */}
+        <div style={{ width: "90%" }}> {/* Limitar a largura do contêiner do Slider */}
           <Slider {...settings} className="flex items-center justify-center">
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/logoandrade.png" 
                 alt="" 
@@ -87,16 +90,20 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/mgmlogo5.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '30px',
-                  maxWidth: "300px",
+                  maxWidth: "250px",
                   height: '300px'
                 }}   
               />
@@ -117,15 +124,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/carpelo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '20px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -147,15 +158,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/elevacaoLogo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '20px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -177,15 +192,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/ecbLogo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '10px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -207,15 +226,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
         
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/eratecnica.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '15px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -237,15 +260,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/fsgLogo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: 1,
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -267,15 +294,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/brazabeLogo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '25px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -297,15 +328,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/egf.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '15px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -327,15 +362,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/hidroplanLogo.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '15px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -357,15 +396,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
 
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/logolopes.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '15px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   
@@ -387,15 +430,19 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           
-          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-sm rounded-lg shadow-lg mx-2 my-8 max-h-fit">
-            <div className="flex-shrink-0">
+          <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col w-auto md:max-w-xs rounded-lg shadow-lg mx-2 my-8 max-h-fit">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Image 
                 src="/static/images/clients/logoValot.png" 
                 alt="" 
                 width={500}
                 height={100}
                 style={{
-                  marginLeft: '15px',
                   maxWidth: "350px",
                   height: '300px'
                 }}   

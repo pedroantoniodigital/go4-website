@@ -5,12 +5,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 const Footer = () => {
 
   return (
-    <main className="flex flex-col bg-primary-dark w-full h-[100px]">
-      {/* <div className="absolute rounded-md w-[50%] bg-primary-light h-[300px] right-[25%] top-[-50%]">
-
-      </div>   */}
-      {/* <div className="h-[80%] bg-primary-dark w-full"></div> */}
-      <div className="h-[100%] bg-primary-dark text-white w-full flex text-xl justify-center items-center">
+    <main className="flex flex-col bg-primary-dark w-full h-[60px]">
+      <div className="h-[100%] bg-primary-dark text-white w-full flex text-base justify-center items-center">
       <span>
         Go4 Digital - Todos os direitos reservados - {" "}
         {new Date().getFullYear()} 

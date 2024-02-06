@@ -10,7 +10,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <main id="aboutUs" className="min-h-screen items-center m-0 py-24 bg-primary-dark min-w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+      <main id="aboutUs" className="h-fit items-center m-0 py-20 bg-primary-dark min-w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
         <div className='flex flex-col items-center'>
           <AnimatedText
             once
@@ -27,8 +27,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-
-          <div className="grid xl:grid-cols-3 max-w-screen-xl mx-auto gap-10 my-20 px-5">
+          <div className="grid xl:grid-cols-3 max-w-screen-xl mx-auto gap-10 my-20 px-10">
               <div className="flex bg-primary-dark hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer drop-shadow-theme p-8 rounded-xl gap-4 items-center text-center flex-col ">
                   <span className="text-white bg-white/10 p-3 rounded-full">
                     <RocketLaunchIcon />
@@ -37,12 +36,12 @@ const AboutUs = () => {
                   <p className="mt-1 text-gray-300"> 
                     Capacitar organizações por meio da excelência em soluções de software
                     para <b>administração de frotas.</b> Comprometemo-nos a fornecer plataformas
-                    <b>inovadoras</b> e <b>personalizadas</b> que otimizam a <b>eficiência operacional,</b>
+                    <b> inovadoras</b> e <b>personalizadas</b> que otimizam a <b>eficiência operacional, </b>
                     promovem a <b>sustentabilidade</b> e impulsionam o <b>sucesso</b> de nossos clientes.
                     Ao integrar tecnologia de ponta com uma abordagem centrada no cliente,
                     buscamos simplificar complexidades, melhorar a tomada de decisões e
                     transformar a gestão de frotas em um facilitador estratégico para o
-                    crescimento sustentável das empresas..
+                    crescimento sustentável das empresas.
                   </p>
               </div>
 
@@ -52,8 +51,8 @@ const AboutUs = () => {
                   </span>
                   <h3 className="font-semibold text-xl">Visão</h3>
                   <p className="mt-1 text-gray-600"> 
-                    Ser reconhecida como a principal referência no mercado de desenvolvimento de software
-                    para gestão de frotas, tanto em aspectos operacionais quanto gerenciais. Almejamos não
+                    Ser reconhecida como a principal <b>referência</b> no mercado de <b>desenvolvimento de software </b>
+                    para <b>gestão de frotas, </b> tanto em aspectos operacionais quanto gerenciais. Almejamos não
                     apenas liderar o setor, mas também moldar seu futuro, redefinindo constantemente os padrões
                     de excelência e inovação.
                   </p>
@@ -67,17 +66,17 @@ const AboutUs = () => {
                   <div>
                       <h3 className="font-semibold text-xl text-white">Valores </h3>
                       <p className="mt-1 text-gray-300"> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae diam neque.
+                        1- Inovação Constante, <br/> 
+                        2 - Sustentabilidade Ambiental,  <br/> 
+                        3 - Foco no Cliente,  <br/> 
+                        4 - Transparência e Integridade, <br/> 
+                        5 - Eficiência Operacional, <br/> 
+                        6 - Colaboração e Parcerias,   <br/> 
+                        7 - Desenvolvimento Profissional, <br/> 
+                        8 - Responsabilidade Social.   <br/> 
                       </p>
                   </div>
               </div>
-          </div>
-
-          <div className='flex w-[40%] justify-center text-center items-center text-lg font-medium text-[#d9d8db]'>
-            <p>
-              Com uma metodologia inovadora e tecnologia de ponta, oferece o que há de mais moderno 
-              em soluções para o segmento de <b className='text-white'>Manutenção</b> e <b className='text-white'>Gerenciamento de Frotas</b>.
-            </p>
           </div>
         </div>
       </main>

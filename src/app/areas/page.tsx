@@ -2,110 +2,125 @@
 
 
 import AnimatedText from '@/components/animation/page';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import NextArrow from '@/components/arrows/nextArrow';
+import PrevArrow from '@/components/arrows/prevArrow';
+
 import Image from 'next/image';
 
+import Slider from 'react-slick';
+
 const Areas = () => {
+  const areas = [
+    {
+      icon: '/static/images/areas/agroIndustria.jpg',
+      label: 'Agroindustrias',
+      text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
+    },
+    {
+      icon: '/static/images/areas/construtora.jpg',
+      label: 'Construtoras',
+      text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
+    },
+    {
+      icon: '/static/images/areas/mineradora.jpg',
+      label: 'Mineradoras',
+      text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
+    },
+    {
+      icon: '/static/images/areas/transportadora.jpg',
+      label: 'Transportadoras',
+      text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
+    },
+    {
+      icon: '/static/images/areas/frotistas.jpg',
+      label: 'Frotistas',
+      text: 'O React JS foi o framework escolhido para criação e adequação do Manfrota Web. Ele tem como foco  a criação de interfaces de usuário em páginas web.'
+    },
+  ]
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
-    <main id="areas" className="-z-10 flex flex-col min-h-screen items-center w-full bg-primary-dark">
-      <div className="w-[80%] mt-24">
-        <div className='flex mt-8 font-bold items-center justify-between flex-col sm:flex-row text-center w-full text-black'>
+    <main id="areas" className="-z-10 flex flex-col min-h-fit items-center w-full bg-primary-dark">
+      <div className="w-[70%] my-16">
+        <div className='flex mt-8 font-bold items-center justify-center flex-col sm:flex-row text-center w-full text-black '>
           <AnimatedText
             once
             text="Áreas de atuação"
             el="h1"
             className="text-3xl text-white w-80"
           />
-          <div className='text-base text-[#9e9ca0] w-80'>
-            Nossa empresa atua em todas as áreas oferecendo soluções de gestão eficientes
-            e personalizadas para atender às necessidades específicas de cada ambiente.
-          </div>
         </div>
-        <div className='flex flex-col min-h-[500px] xl:flex-row gap-8 mt-24'>
-          <div className='bg-primary-dark hover:drop-shadow-theme transition-all duration-1000 gap-3 drop-shadow-theme flex rounded-lg flex-col items-center justify-center text-center py-8 px-8 text-white'>
-            <div className="flex-shrink-0">
-              <Image 
-                src="/static/images/areas/rural.jpg" 
-                alt="" 
-                width={500}
-                height={100}
-                className="rounded-lg filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
-                style={{
-                  maxWidth: "250px",
-                  height: '190px'
-                }}   
-              />
-            </div>
-            <div className='mt-8'>
-              <AnimatedText
-                once
-                text="Rural"
-                el="h1"
-                className="font-bold"
-              />
-              <div>
-                Nossa empresa oferece soluções de gestão específicas para ambientes rurais, 
-                incluindo software para administração de frotas, controle de combustível e 
-                manutenção de pneus, ajudando a maximizar a eficiência das operações agrícolas.
+
+        <div className='h-fit gap-4'>
+          <Slider {...settings} className="flex items-center justify-center">
+            {areas.map((l, index) => (
+              <div className="flex my-6 border-white/10 bg-white/10 5 hover:drop-shadow-theme border-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col rounded-lg p-4">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={l.icon}
+                    alt=""
+                    className='rounded-2xl shadow-2xl'
+                    width={400}
+                    height={200}
+                    style={{
+                      maxWidth: "320",
+                      height: '240px'
+                    }}
+                  />
+                </div>
+                <div className="flex flex-1 flex-col justify-between p-6 text-center">
+                  <AnimatedText
+                    once
+                    text={l.label}
+                    el="h1"
+                    className="font-semibold text-white"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
-          <div className='bg-primary-light/90 gap-3 hover:drop-shadow-theme transition-all duration-1000 flex rounded-lg flex-col items-center justify-center text-center py-8 px-8 text-white'>
-            <div className="flex-shrink-0">
-              <Image 
-                src="/static/images/areas/urbano.jpg" 
-                alt="" 
-                width={500}
-                height={100}
-                className="rounded-lg filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
-                style={{
-                  maxWidth: "250px",
-                  height: '190px'
-                }}   
-              />
-            </div>
-            <div className='mt-8'>
-              <AnimatedText
-                once
-                text="Urbano"
-                el="h1"
-                className="font-bold"
-              />
-              <div>
-                Atendemos às demandas complexas das áreas urbanas com soluções de gestão de frota, 
-                combustível e pneus, simplificando as operações de empresas de transporte, 
-                serviços públicos e corporações urbanas.
-              </div>
-            </div>
-          </div>
-          <div className='bg-primary-dark drop-shadow-theme gap-3 flex rounded-lg flex-col items-center justify-center text-center py-8 px-8 text-white'>
-            <div className="flex-shrink-0">
-              <Image 
-                src="/static/images/areas/florestal.jpg" 
-                alt="" 
-                width={500}
-                height={100}
-                className="rounded-lg filter grayscale hover:filter-none hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"
-                style={{
-                  maxWidth: "270px",
-                  height: '190px'
-                }}   
-              />
-            </div>
-            <div className='mt-8'>
-              <AnimatedText
-                once
-                text="Florestal"
-                el="h1"
-                className="font-bold "
-              />
-              <div>
-                Nossas soluções de gestão são adaptadas para ambientes florestais, fornecendo
-                 ferramentas para otimizar frotas, monitorar combustível e garantir a manutenção
-                  de pneus, contribuindo para a eficiência e sustentabilidade na gestão de recursos naturais.
-              </div>
-            </div>
-          </div>
+            ))}
+
+          </Slider>
         </div>
       </div>
     </main>

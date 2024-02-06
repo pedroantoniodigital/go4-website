@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from 'react-scroll';
 import NextLink from 'next/link';
@@ -11,6 +11,14 @@ const menus = [
   {
     label: 'Home',
     to: 'landingPage',
+  },
+  {
+    label: 'Produtos',
+    to: 'projects'
+  },
+  {
+    label: 'Vantagens',
+    to: 'advantages'
   },
   {
     label: 'Quem Somos',
@@ -25,20 +33,16 @@ const menus = [
     to: 'areas'
   },
   {
-    label: 'Depoimentos',
-    to: 'brief'
-  },
-  {
     label: 'Porque nós',
     to: 'whyUs'
   },
   {
-    label: 'Projetos',
-    to: 'projects'
-  },
-  {
     label: 'Parceiros',
     to: 'clients'
+  },
+  {
+    label: 'Depoimentos',
+    to: 'brief'
   },
   {
     label: 'Dúvidas',
@@ -63,19 +67,19 @@ const NavBar = () => {
   console.log(navbar);
 
   return (
-    <div className={`fixed ${!navbar ? `bg-transparent` : `bg-white/95`} w-full h-14 z-50 justify-between transition-all duration-500 ease-in-out`}>
+    <div className={`fixed ${!navbar ? `bg-transparent` : `bg-white`} w-full h-14 z-50 justify-between transition-all duration-500 ease-in-out`}>
       <div className="flex justify-around items-center bg-transparent h-full">
-        <img className="max-w-full w-8 h-w-8 rounded-lg" src="/static/images/1665837042487.jpeg" alt="image description" />
+        <img className="max-w-full w-14 h-w-14 rounded-lg" src={navbar ? "/static/images/go4-icon-azul.png" : "/static/images/logotipo-go4-bg-white.png"} alt="image description" />
 
         <div className="flex flex-row items-center gap-10">
           {menus.map((e, index) => (
-            <div key={index} className={`${!navbar ? `text-white` : `text-black`} font-semibold hover:underline ${!navbar ? `hover:text-white` : `hover:text-gray-800ck`}  cursor-pointer`}>
+            <div key={index} className={`${!navbar ? `text-white` : `text-black`} font-medium hover:underline ${!navbar ? `hover:text-white` : `hover:text-gray-800ck`}  cursor-pointer`}>
               <Link
                 activeClass="active"
                 to={e.to}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={700}
               >
                 {e.label}

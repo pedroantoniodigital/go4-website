@@ -2,10 +2,6 @@
 
 import AnimatedText from '@/components/animation/page';
 
-import { IconButton } from '@mui/material';
-
-import MapIcon from '@mui/icons-material/Map';
-
 import { useRouter } from 'next/navigation'
 
 const OurModules = () => {
@@ -14,7 +10,7 @@ const OurModules = () => {
   
   return (
     <>
-      <main className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-20 bg-white">
+      <main className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-4 bg-white">
         <div className="flex flex-wrap justify-center w-100% md:w-[70%] gap-4">
           {/* PRIMEIRA DIV  */}
           <div className="flex flex-col gap-4 w-[100%] lg:w-[42%] text-center rounded-lg h-[300px] text-slate-900 p-10 mt-10">
@@ -36,14 +32,14 @@ const OurModules = () => {
                 />
                 <AnimatedText
                   once
-                  text="Rastreador"
+                  text="Frota"
                   el="h1"
                   className="text-blue-700 text-xl font-bold"
                 />
               </div>
-              <IconButton onClick={() => router.push("/screens/tracker")}>
+              {/* <IconButton onClick={() => router.push("/screens/tracker")}>
                 <MapIcon sx={{ color: "#1d4ed8" }} />
-              </IconButton>
+              </IconButton> */}
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
               Lorem ipsum dolor sit amet,
@@ -55,54 +51,43 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-blue-700 text-lg font-bold">01</span>
-                <button onClick={() => router.push("/screens/tracker")} className="ml-4 hover:underline hover:cursor-pointer">Mapa de Equipamentos</button>
+                <button onClick={() => router.push("/screens/fleet")} className="ml-4 hover:underline hover:cursor-pointer">
+                  Cadastro de Equipamentos
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-blue-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <button onClick={() => router.push("/screens/fleet")} className="ml-4 hover:underline hover:cursor-pointer">
+                  Composição Custo Hora
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-blue-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
+                <button onClick={() => router.push("/screens/fleet")} className="ml-4 hover:underline hover:cursor-pointer">
+                  Gestão de Documentos ( Tacógrafo )
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="flex justify-between text-gray-600">
                 <div>
                   <span className="text-blue-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
+                  <button onClick={() => router.push("/screens/fleet")} className="ml-4 hover:underline hover:cursor-pointerhover:underline hover:cursor-pointer">
+                    Painel de Equipamentos
+                  </button>
                 </div>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-blue-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-blue-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-blue-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
             {/* Conteúdo da segunda div */}
           </div>
           {/* PRIMEIRO MODULO */}
 
           {/* SEGUNDO MODULO */}
-          <div className="md:shadow-2xl lg:mt-[-400px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
+          <div className="md:shadow-2xl lg:mt-[-200px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
             <div className="flex flex-col">
               <AnimatedText
                 once
@@ -112,7 +97,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Frota"
+                text="Controle de Horas"
                 el="h1"
                 className="text-green-700 text-xl font-bold"
               />
@@ -125,49 +110,28 @@ const OurModules = () => {
               diam bibendum fringilla.
             </div>
             <div className="mt-10">
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-green-700 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <button onClick={() => router.push("/screens/appropriation")} className="ml-4 text-left hover:underline hover:cursor-pointerhover:underline hover:cursor-pointer">
+                  Apropriação ( Horas Produtivas e Improdutivas )
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-green-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <button onClick={() => router.push("/screens/appropriation")} className="ml-4 text-left hover:underline hover:cursor-pointerhover:underline hover:cursor-pointer">
+                  Apropriação/Captura de Horas Automáticas
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-green-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
+                <button onClick={() => router.push("/screens/appropriation")} className="ml-4 text-left hover:underline hover:cursor-pointerhover:underline hover:cursor-pointer">
+                  Mapa de Apropriações
+                </button>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="flex justify-between text-gray-600">
-                <div>
-                  <span className="text-green-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
-                </div>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-green-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-green-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-green-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
             {/* Conteúdo da segunda div */}
           </div>
@@ -184,7 +148,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Combustível"
+                text="Manutenção"
                 el="h1"
                 className="text-purple-700 text-xl font-bold"
               />
@@ -197,55 +161,34 @@ const OurModules = () => {
               diam bibendum fringilla.
             </div>
             <div className="mt-10">
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-purple-700 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <button onClick={() => router.push("/screens/maintenance")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Start Automática de Manutenções Preventivas e Corretivas
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              {/* <div className="text-gray-600">
                 <span className="text-purple-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Indicador de Custo Manutenção Real x Manutenção Padrão
+                </span>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
+              <hr className="border-b border-dashed border-gray-300 my-2" /> */}
 
-              <div className="text-gray-600">
-                <span className="text-purple-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
+              <div className="text-gray-600 flex flex-row">
+                <span className="text-purple-700 text-lg font-bold">02</span>
+                <button onClick={() => router.push("/screens/maintenance")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Mapa de Previsão de Manutenções Preventivas
+                </button>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="flex justify-between text-gray-600">
-                <div>
-                  <span className="text-purple-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
-                </div>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-purple-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-purple-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-purple-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
           </div>
           {/* TERCEIRO MODULO */}
 
           {/* QUARTO MODULO */}
-          <div className="md:shadow-2xl lg:mt-[-400px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
+          <div className="md:shadow-2xl lg:mt-[-90px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
             <div className="flex flex-col">
               <AnimatedText
                 once
@@ -255,7 +198,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Pneus"
+                text="Combustíveis e Lubrificantes"
                 el="h1"
                 className="text-orange-700 text-xl font-bold"
               />
@@ -270,47 +213,36 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-orange-700 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <button onClick={() => router.push("/screens/fuel")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Gestão de Estoque Físico
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-orange-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <button onClick={() => router.push("/screens/fuel")} className="ml-4 hover:underline hover:cursor-pointer">
+                  Abastecimentos
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-orange-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
+                <button onClick={() => router.push("/screens/fuel")} className="ml-4 hover:underline hover:cursor-pointer">
+                  Dashboards
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="flex justify-between text-gray-600">
                 <div>
                   <span className="text-orange-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
+                  <button onClick={() => router.push("/screens/fuel")} className="ml-4 hover:underline hover:cursor-pointer">
+                    Relatórios
+                  </button>
                 </div>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-orange-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-orange-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-orange-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
           </div>
           {/* QUARTO MODULO */}
@@ -326,7 +258,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Apropriação"
+                text="Pneus e Material Rodante"
                 el="h1"
                 className="text-red-700 text-xl font-bold"
               />
@@ -341,53 +273,48 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Gestão de Vida Útil de Pneus
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Gestão de Movimentação
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-red-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="flex justify-between text-gray-600">
-                <div>
-                  <span className="text-red-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
-                </div>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Controle de Custo de Pneus por Hora/KM Trabalhados
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
-                <span className="text-red-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
+                <span className="text-red-700 text-lg font-bold">04</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Rodízio de Pneus
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="flex justify-between text-gray-600 flex-row">
                 <span className="text-red-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Dashboards e Indicadores Gerenciais ( Gráficos e Relatórios )
+                </button>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-red-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
           </div>
           {/* QUINTO MODULO */}
 
           {/* SEXTO MODULO */}
-          <div className="md:shadow-2xl lg:mt-[-400px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
+          <div className="md:shadow-2xl lg:mt-[-150px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
             <div className="flex flex-col">
               <AnimatedText
                 once
@@ -397,7 +324,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Dashboards"
+                text="Gestão de Locação de Frota"
                 el="h1"
                 className="text-yellow-400 text-xl font-bold"
               />
@@ -412,47 +339,18 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-yellow-400 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Gestão de Locação Locador
+                </span>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-yellow-400 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Gestão de Locação Locatário
+                </span>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-yellow-400 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="flex justify-between text-gray-600">
-                <div>
-                  <span className="text-yellow-400 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
-                </div>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-yellow-400 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-yellow-400 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-yellow-400 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
           </div>
           {/* SEXTO MODULO */}
@@ -469,7 +367,7 @@ const OurModules = () => {
                 />
                 <AnimatedText
                   once
-                  text="Manutenção"
+                  text="Rastreamento"
                   el="h1"
                   className="text-pink-700 text-xl font-bold"
                 />
@@ -485,47 +383,26 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">01</span>
-                <span className="ml-4 ">Tela 01</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Mapa de Localização da Frota
+                </span>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">02</span>
-                <span className="ml-4 ">Tela 02</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Rastreamento Híbrido ( GPRS E SAT )
+                </span>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">03</span>
-                <span className="ml-4 ">Tela 03</span>
+                <span className="ml-4 hover:underline hover:cursor-pointer">
+                  Captura de Horas/KM Automática
+                </span>
               </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="flex justify-between text-gray-600">
-                <div>
-                  <span className="text-pink-700 text-lg font-bold">04</span>
-                  <span className="ml-4 ">Tela 04</span>
-                </div>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-pink-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 05</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-pink-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 06</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
-
-              <div className="text-gray-600">
-                <span className="text-pink-700 text-lg font-bold">05</span>
-                <span className="ml-4 ">Tela 07</span>
-              </div>
-              <hr className="border-b border-dashed border-gray-300 my-2" />
             </div>
           </div>
           {/* SETIMO MODULO */}

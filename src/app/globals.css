@@ -97,4 +97,10 @@
   transform: scale(1.2);
   color: #385880 !important;
 }
+.slick-slider {
+  margin:0 -15px;
+}
+.slick-slide {
+  padding:10px;
+}
 

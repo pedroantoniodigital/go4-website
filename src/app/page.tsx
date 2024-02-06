@@ -11,21 +11,22 @@ import OurTeam from './team/page';
 import WhyUs from './whyUs/page';
 import Clients from './clients/page';
 import RocketButton from '@/components/rocketButton/rocketButton';
+import Advantages from './advantages/page';
 
 export default function App() {
 
   return (
     <>
       <LandingPage />
+      <Projects />
+      <OurModules />
+      <Advantages />
       <AboutUs />
       <OurTeam />
       <Areas />
-      <Brief />
       <WhyUs />
-      <Projects />
-      <OurModules />
       <Clients />
-      <Questions />
+      <Brief />
       <Footer />
       <RocketButton />
     </>
