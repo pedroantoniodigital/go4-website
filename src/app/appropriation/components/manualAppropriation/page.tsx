@@ -15,9 +15,12 @@ const ManualAppropriation = () => {
             Como funciona?
           </span>
         </div>
-        <p className="text-3xl text-center mt-6 font-bold text-black">
-          Apropriação de Horas dos Equipamentos
-        </p>
+        <AnimatedText
+          once
+          text="Apropriação de Horas dos Equipamentos"
+          el="h1"
+          className="text-3xl text-center mt-6 font-bold text-black"
+        />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao processo de Apropriação/Controle de horas dos equipamentos na plataforma.
         </p>
@@ -27,7 +30,12 @@ const ManualAppropriation = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left">Apropriação Manual</h3>
+              <AnimatedText
+                once
+                text="Apropriação Manual"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 A Apropriação manual consiste na Adição/Giro de Horas dos Equipamentos. Nela, o usuário cria um registro de uma apropriação em determinada
                 data, e posteriormente, cria os itens dela contendo o que se foi trabalhado com o equipamento em questão nesta data, rodando assim a kilometragem

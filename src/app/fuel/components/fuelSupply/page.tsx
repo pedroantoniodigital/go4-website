@@ -15,7 +15,12 @@ const FuelSupply = () => {
               <img src="/static/images/fuel/abastec.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 filter grayscale hover:grayscale-0 hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-white text-center sm:text-left">Abastecimentos</h3>
+              <AnimatedText
+                once
+                text="Abastecimentos"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-white text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-200 text-center sm:text-left">
                 Esta tela é voltada em dar funcionalidade aos tanques em postos criados, abastecendo-os, os usando para
                 abastecer sua frota ou transferindo de um posto a outro. <br/><br/>

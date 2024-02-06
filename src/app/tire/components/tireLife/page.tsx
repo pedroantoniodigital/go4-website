@@ -1,5 +1,7 @@
 "use client"
 
+import AnimatedText from "@/components/animation/page";
+
 const TireLife = () => {
   return (
     <>
@@ -11,9 +13,12 @@ const TireLife = () => {
             Descubra
           </span>
         </div>
-        <p className="text-3xl text-center mt-6 font-bold text-black">
-          Módulo de Pneus
-        </p>
+        <AnimatedText
+          once
+          text="Módulo de Pneus"
+          el="h1"
+          className="text-3xl text-center mt-6 font-bold text-black"
+        />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao modulo de Pneus da plataforma.
         </p>
@@ -23,7 +28,12 @@ const TireLife = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:items-center py-4">
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-white text-center">Cadastro dos Pneus</h3>
+              <AnimatedText
+                once
+                text="Cadastro dos Pneus"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-white text-center"
+              />
               <p className="mt-3 text-lg text-gray-200 text-center">
                 O cadastro de pneus pode ser feita de tres formas, sendo a Mobilização de Pneus, A Compra De Pneus ou a Importação de Pneus por Planilhas.
               </p>

@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <main id="landingPage" className="flex flex-col md:flex-row min-w-full min-h-screen justify-center items-center py-0 m-0 bg-black">
       <video className='absolute inset-0 object-cover w-full h-full opacity-50' loop autoPlay muted controls={false}>
-        <source src="/static/videos/Manfrot.mp4" type="video/mp4" />
+        <source src="/static/videos/Manfrota.mp4" type="video/mp4" />
       </video>
       <div className='flex z-40 flex-col w-full bg-transparent p-4 text-center items-center justify-center'>
         <span className='text-white font-bold text-3xl my-2'>

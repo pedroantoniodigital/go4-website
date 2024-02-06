@@ -15,9 +15,12 @@ const EquipmentRegister = () => {
             Como funciona?
           </span>
         </div>
-        <p className="text-3xl text-center mt-6 font-bold text-black">
-          Cadastro de Equipamentos
-        </p>
+        <AnimatedText
+          once
+          text="Cadastro de Equipamentos"
+          el="h1"
+          className="text-3xl text-center mt-6 font-bold text-black"
+        />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao processo de cadastro de equipamentos na plataforma.
         </p>
@@ -27,7 +30,12 @@ const EquipmentRegister = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left">Cadastro Inicial</h3>
+              <AnimatedText
+                once
+                text="Cadastro Inicial"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 O cadastro de equipamentos é uma etapa fundamental para a eficiente gestão da frota em sua empresa.
                 Este cadastro é necessário para as demais funções que utilizam a frota de sua empresa, como o rastreamento desta,

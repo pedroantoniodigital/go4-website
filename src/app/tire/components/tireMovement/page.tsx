@@ -1,5 +1,7 @@
 "use client"
 
+import AnimatedText from "@/components/animation/page";
+
 const TireMovement = () => {
   return (
     <>
@@ -7,7 +9,12 @@ const TireMovement = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left">Gestão de Movimentações</h3>
+              <AnimatedText
+                once
+                text="Gestão de Movimentações"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Gerencie as movimentações de cada pneu de sua operação.
               </p>

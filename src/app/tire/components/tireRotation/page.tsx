@@ -1,5 +1,7 @@
 "use client"
 
+import AnimatedText from "@/components/animation/page";
+
 const TireRotation = () => {
   return (
     <>
@@ -7,7 +9,12 @@ const TireRotation = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold sm:text-3xl text-white">Rodizio de Pneus</h3>
+              <AnimatedText
+                once
+                text="Rodizio de Pneus"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-white"
+              />
               <p className="mt-3 text-lg text-gray-200">
                 <b>Aloque</b> os pneus em sua frota, <b>sucateie-os</b> ou <b>jogue-os</b> para recape por meio do método interativo Kanban.
               </p>

@@ -9,8 +9,13 @@ const EquipmentDocs = () => {
     <>
       <section className="m-4 md:m-8 bg-white text-black">
         <div className="container mx-auto p-4 my-6 space-y-2 text-center">
-          <h2 className="text-3xl font-bold">Gestão de Documentos <br/> ( Tacógrafo )</h2>
-          <p className="dark:text-gray-400">Sobre a gestão das documentaçõs da frota</p>
+          <AnimatedText
+            once
+            text="Gestão de Documentos ( Tacógrafo )"
+            el="h1"
+            className="text-3xl font-bold"
+          />
+          <p className="dark:text-gray-600">Sobre a gestão das documentaçõs da frota</p>
         </div>
         <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-center p-4">

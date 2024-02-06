@@ -15,9 +15,12 @@ const MaintenanceStart = () => {
             Como funciona?
           </span>
         </div>
-        <p className="text-3xl text-center mt-6 font-bold text-black">
-          Manutenções
-        </p>
+        <AnimatedText
+          once
+          text="Manutenções"
+          el="h1"
+          className="text-3xl text-center mt-6 font-bold text-black"
+        />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao processo de <b>Manutenções</b> dos equipamentos na plataforma.
         </p>
@@ -27,7 +30,12 @@ const MaintenanceStart = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left">Start Automático</h3>
+              <AnimatedText
+                once
+                text="Start Automático"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 As manutenções associadas aos equipamentos são programadas com base em uma quilometragem preventiva.
                 Quando a quilometragem percorrida por um veículo excede esse limite, a manutenção correspondente é

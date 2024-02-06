@@ -64,8 +64,6 @@ const NavBar = () => {
 
   window.addEventListener("scroll", changeBackground);
 
-  console.log(navbar);
-
   return (
     <div className={`fixed ${!navbar ? `bg-transparent` : `bg-white`} w-full h-14 z-50 justify-between transition-all duration-500 ease-in-out`}>
       <div className="flex justify-around items-center bg-transparent h-full">

@@ -274,7 +274,7 @@ const OurModules = () => {
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">01</span>
                 <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Gestão de Vida Útil de Pneus
+                  Cadastro de Pneus
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -290,7 +290,7 @@ const OurModules = () => {
               <div className="text-gray-600 flex flex-row">
                 <span className="text-red-700 text-lg font-bold">03</span>
                 <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Controle de Custo de Pneus por Hora/KM Trabalhados
+                  Rodizio de Pneus
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -298,7 +298,7 @@ const OurModules = () => {
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">04</span>
                 <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Rodízio de Pneus
+                  Dashboard
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
@@ -306,7 +306,21 @@ const OurModules = () => {
               <div className="flex justify-between text-gray-600 flex-row">
                 <span className="text-red-700 text-lg font-bold">05</span>
                 <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
-                  Dashboards e Indicadores Gerenciais ( Gráficos e Relatórios )
+                  Visualização em Tabela
+                </button>
+              </div>
+
+              <div className="flex justify-between text-gray-600 flex-row">
+                <span className="text-red-700 text-lg font-bold">06</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Visualização Amplicada / Gestão de Custos
+                </button>
+              </div>
+
+              <div className="flex justify-between text-gray-600 flex-row">
+                <span className="text-red-700 text-lg font-bold">07</span>
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                  Relatórios
                 </button>
               </div>
             </div>
@@ -383,25 +397,25 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">01</span>
-                <span className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Mapa de Localização da Frota
-                </span>
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">02</span>
-                <span className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Rastreamento Híbrido ( GPRS E SAT )
-                </span>
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
               <div className="text-gray-600">
                 <span className="text-pink-700 text-lg font-bold">03</span>
-                <span className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Captura de Horas/KM Automática
-                </span>
+                </button>
               </div>
             </div>
           </div>

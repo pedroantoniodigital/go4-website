@@ -1,5 +1,7 @@
 "use client"
 
+import AnimatedText from "@/components/animation/page";
+
 const AppropriationMap = () => {
   return (
     <>
@@ -8,7 +10,12 @@ const AppropriationMap = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:items-center"> 
             <div>
-              <h3 className="text-2xl font-bold sm:text-3xl text-black text-center">Mapa de Apropriações</h3>
+              <AnimatedText
+                once
+                text="Mapa de Apropriações"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-black text-center"
+              />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Tendo cadastrado as apropriações, é possivel emitir uma planilha excel que serve como um relatório das apropriações e kilometragens rodadas
                 dos equipamentos nos ultimos 3 meses, bem como as que ainda haverão ou já ocorreram neste mês.

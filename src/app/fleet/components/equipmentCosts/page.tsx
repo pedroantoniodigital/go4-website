@@ -11,7 +11,12 @@ const EquipmentCosts = () => {
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold sm:text-3xl text-white">Composição Custo Hora</h3>
+              <AnimatedText
+                once
+                text="Composição Custo Hora"
+                el="h1"
+                className="text-2xl font-bold sm:text-3xl text-white text-center sm:text-left"
+              />
               <p className="mt-3 text-lg text-gray-200">
                 Anexado ao equipamento, o custo hora possui informações cruciais para o calculo de manutenções e outros custos gerais da frota
               </p>
