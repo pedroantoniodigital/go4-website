@@ -13,7 +13,7 @@ const TireMovement = () => {
                 once
                 text="Gestão de Movimentações"
                 el="h1"
-                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+                className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Gerencie as movimentações de cada pneu de sua operação.

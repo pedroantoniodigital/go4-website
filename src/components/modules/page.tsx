@@ -28,7 +28,7 @@ const OurModules = () => {
                   once
                   text="01"
                   el="h1"
-                  className="text-black text-xl font-bold"
+                  className="text-gray-700 text-xl font-bold"
                 />
                 <AnimatedText
                   once
@@ -93,7 +93,7 @@ const OurModules = () => {
                 once
                 text="02"
                 el="h1"
-                className="text-black text-xl font-bold"
+                className="text-gray-700 text-xl font-bold"
               />
               <AnimatedText
                 once
@@ -144,7 +144,7 @@ const OurModules = () => {
                 once
                 text="03"
                 el="h1"
-                className="text-black text-xl font-bold"
+                className="text-gray-700 text-xl font-bold"
               />
               <AnimatedText
                 once
@@ -194,7 +194,7 @@ const OurModules = () => {
                 once
                 text="04"
                 el="h1"
-                className="text-black text-xl font-bold"
+                className="text-gray-700 text-xl font-bold"
               />
               <AnimatedText
                 once
@@ -254,7 +254,7 @@ const OurModules = () => {
                 once
                 text="05"
                 el="h1"
-                className="text-black text-xl font-bold"
+                className="text-gray-700 text-xl font-bold"
               />
               <AnimatedText
                 once
@@ -273,7 +273,7 @@ const OurModules = () => {
             <div className="mt-10">
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">01</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Cadastro de Pneus
                 </button>
               </div>
@@ -281,7 +281,7 @@ const OurModules = () => {
 
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">02</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Gestão de Movimentação
                 </button>
               </div>
@@ -289,7 +289,7 @@ const OurModules = () => {
 
               <div className="text-gray-600 flex flex-row">
                 <span className="text-red-700 text-lg font-bold">03</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Rodizio de Pneus
                 </button>
               </div>
@@ -297,29 +297,31 @@ const OurModules = () => {
 
               <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">04</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Dashboard
                 </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="flex justify-between text-gray-600 flex-row">
+              <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">05</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Visualização em Tabela
                 </button>
               </div>
+              <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="flex justify-between text-gray-600 flex-row">
+              <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">06</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Visualização Amplicada / Gestão de Custos
                 </button>
               </div>
+              <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="flex justify-between text-gray-600 flex-row">
+              <div className="text-gray-600">
                 <span className="text-red-700 text-lg font-bold">07</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
                   Relatórios
                 </button>
               </div>
@@ -328,13 +330,13 @@ const OurModules = () => {
           {/* QUINTO MODULO */}
 
           {/* SEXTO MODULO */}
-          <div className="md:shadow-2xl lg:mt-[-150px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
+          <div className="md:shadow-2xl lg:mt-[-200px] rounded-lg w-[100%] lg:w-[42%] h-fit p-10">
             <div className="flex flex-col">
               <AnimatedText
                 once
                 text="06"
                 el="h1"
-                className="text-black text-xl font-bold"
+                className="text-gray-700 text-xl font-bold"
               />
               <AnimatedText
                 once
@@ -377,7 +379,7 @@ const OurModules = () => {
                   once
                   text="07"
                   el="h1"
-                  className="text-black text-xl font-bold"
+                  className="text-gray-700 text-xl font-bold"
                 />
                 <AnimatedText
                   once

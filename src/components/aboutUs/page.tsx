@@ -27,7 +27,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="grid xl:grid-cols-3 max-w-screen-xl mx-auto gap-10 my-20 px-10">
+          <div className="grid xl:grid-cols-3 max-w-screen-xl mx-2 gap-10 my-20">
               <div className="flex bg-primary-dark hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer drop-shadow-theme p-8 rounded-xl gap-4 items-center text-center flex-col ">
                   <span className="text-white bg-white/10 p-3 rounded-full">
                     <RocketLaunchIcon />

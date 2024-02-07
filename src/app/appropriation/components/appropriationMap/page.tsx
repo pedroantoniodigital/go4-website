@@ -14,7 +14,7 @@ const AppropriationMap = () => {
                 once
                 text="Mapa de Apropriações"
                 el="h1"
-                className="text-2xl font-bold sm:text-3xl text-black text-center"
+                className="text-2xl font-bold sm:text-3xl text-gray-700 text-center"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Tendo cadastrado as apropriações, é possivel emitir uma planilha excel que serve como um relatório das apropriações e kilometragens rodadas

@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 const EquipmentDocs = () => {
   return (
     <>
-      <section className="m-4 md:m-8 bg-white text-black">
+      <section className="m-4 md:m-8 bg-white text-gray-700">
         <div className="container mx-auto p-4 my-6 space-y-2 text-center">
           <AnimatedText
             once

@@ -10,7 +10,7 @@ const Brief = () => {
     <main id="brief" className="min-h-screen w-full h-fit-content flex flex-col items-center justify-center m-0 py-20 bg-white">
       <div className="flex flex-wrap justify-center w-100% md:w-[70%] mt-24 gap-8 p-2 sm:p-0">
         {/* PRIMEIRA DIV  */}
-        <div className='w-[100%] text-black text-center text-3xl font-bold'>
+        <div className='w-[100%] text-gray-700 text-center text-3xl font-bold'>
           Veja alguns <span className='text-primary-light'>depoimentos</span> de nossos <br/> parceiros
         </div>
         
@@ -26,7 +26,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"
@@ -59,7 +59,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"
@@ -95,7 +95,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"
@@ -126,7 +126,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"
@@ -159,7 +159,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"
@@ -188,7 +188,7 @@ const Brief = () => {
             <div>
               <div className='bg-slate-800 rounded-full w-16 h-16'></div>
             </div>
-            <div className='flex flex-col text-black'>
+            <div className='flex flex-col text-gray-700'>
               <AnimatedText
                 once
                 text="Empresa 1"

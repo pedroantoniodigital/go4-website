@@ -78,7 +78,7 @@ const Areas = () => {
   return (
     <main id="areas" className="-z-10 flex flex-col min-h-fit items-center w-full bg-primary-dark">
       <div className="w-[70%] my-16">
-        <div className='flex mt-8 font-bold items-center justify-center flex-col sm:flex-row text-center w-full text-black '>
+        <div className='flex mt-8 font-bold items-center justify-center flex-col sm:flex-row text-center w-full text-gray-700 '>
           <AnimatedText
             once
             text="Áreas de atuação"

@@ -1,56 +1,50 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
-
-import { Link } from 'react-scroll';
-import NextLink from 'next/link';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Link from "next/link";
 
 const menus = [
   {
     label: 'Home',
-    to: 'landingPage',
+    to: '/#landingPage',
   },
   {
     label: 'Produtos',
-    to: 'projects'
+    to: '/#projects'
   },
   {
     label: 'Vantagens',
-    to: 'advantages'
+    to: '/#advantages'
   },
   {
     label: 'Quem Somos',
-    to: 'aboutUs'
+    to: '/#aboutUs'
   },
   {
     label: 'Time',
-    to: 'team'
+    to: '/#team'
   },
   {
     label: 'Áreas',
-    to: 'areas'
+    to: '/#areas'
   },
   {
     label: 'Porque nós',
-    to: 'whyUs'
+    to: '/#whyUs'
   },
   {
     label: 'Parceiros',
-    to: 'clients'
+    to: '/#clients'
   },
   {
     label: 'Depoimentos',
-    to: 'brief'
-  },
-  {
-    label: 'Dúvidas',
-    to: 'questions'
+    to: '/#brief'
   },
 ]
 
-const NavBar = () => {
+const ScreensNav = () => {
 
   const [navbar, setNavbar] = useState(false);
   
@@ -71,14 +65,9 @@ const NavBar = () => {
 
         <div className="flex flex-row items-center gap-10">
           {menus.map((e, index) => (
-            <div key={index} className={`${!navbar ? `text-white` : `text-black`} font-medium hover:underline ${!navbar ? `hover:text-white` : `hover:text-gray-800ck`}  cursor-pointer`}>
+            <div key={index} className={`${!navbar ? `text-white` : `text-gray-700`} font-medium hover:underline ${!navbar ? `hover:text-primary-light` : `hover:text-primary-light`} transition-all duration-500 ease-in-out  cursor-pointer`}>
               <Link
-                activeClass="active"
-                to={e.to}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
+                href={e.to}
               >
                 {e.label}
               </Link>
@@ -88,10 +77,10 @@ const NavBar = () => {
 
         <div className="grid grid-cols-2 divide-x">
           <a href="https://www.instagram.com/go4_digital/" target="_blank">
-            <InstagramIcon className={`hover:text-[#fb6e02] ${!navbar ? `text-white` : `text-black`} transition-all duration-1000 ease-in-out mr-2`} sx={{ width: 28, height: 28}} />
+            <InstagramIcon className={`hover:text-[#fb6e02] ${!navbar ? `text-white` : `text-gray-700`} transition-all duration-1000 ease-in-out mr-2`} sx={{ width: 28, height: 28}} />
           </a>
           <a href="https://www.linkedin.com/company/go4-digital/" target="_blank">
-            <LinkedInIcon className={`hover:text-[#0a66c2] ${!navbar ? `text-white` : `text-black`} transition-all duration-1000 ease-in-out ml-2`} sx={{ width: 28, height: 28}} />
+            <LinkedInIcon className={`hover:text-[#0a66c2] ${!navbar ? `text-white` : `text-gray-700`} transition-all duration-1000 ease-in-out ml-2`} sx={{ width: 28, height: 28}} />
           </a>
         </div>
       </div>
@@ -99,4 +88,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default ScreensNav;

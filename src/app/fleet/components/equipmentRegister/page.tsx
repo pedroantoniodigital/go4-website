@@ -19,7 +19,7 @@ const EquipmentRegister = () => {
           once
           text="Cadastro de Equipamentos"
           el="h1"
-          className="text-3xl text-center mt-6 font-bold text-black"
+          className="text-3xl text-center mt-6 font-bold text-gray-700"
         />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao processo de cadastro de equipamentos na plataforma.
@@ -34,7 +34,7 @@ const EquipmentRegister = () => {
                 once
                 text="Cadastro Inicial"
                 el="h1"
-                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+                className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 O cadastro de equipamentos é uma etapa fundamental para a eficiente gestão da frota em sua empresa.
@@ -51,7 +51,7 @@ const EquipmentRegister = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-black">Informações Padrões</h4>
+                    <h4 className="text-lg font-medium text-gray-700">Informações Padrões</h4>
                     <p className="mt-2 text-gray-600">
                       Cadastro de <b>Marca, Modelo, Grupo, Subgrupo, Valor de compra</b> entre outros do equipamento.
                     </p>
@@ -66,7 +66,7 @@ const EquipmentRegister = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-black">Kilometragem</h4>
+                    <h4 className="text-lg font-medium text-gray-700">Kilometragem</h4>
                     <p className="mt-2 text-gray-600">
                       Anexo manual ou por <b>apropriações de horas</b> da <b>kilometragem</b>.
                     </p>
@@ -81,7 +81,7 @@ const EquipmentRegister = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-black">Dados auxiliares</h4>
+                    <h4 className="text-lg font-medium text-gray-700">Dados auxiliares</h4>
                     <p className="mt-2 text-gray-600">
                       Infomações como o proprietário do <b>Equipamento, a Seguradora, o Centro de Custos</b> deste, além dos dados do rastreador instalado no equipamento.
                     </p>

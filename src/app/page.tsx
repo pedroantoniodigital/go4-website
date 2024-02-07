@@ -1,22 +1,22 @@
-import NavBar from '@/app/navbar/navbar';
-import LandingPage from './landingPage/page';
-import AboutUs from './aboutUs/page';
-import OurModules from './modules/page';
-import Footer from './footer/page';
-import Brief from './brief/page';
+import NavBar from '@/components/navbar/navbar';
 import Projects from './projects/page';
-import Questions from './questions/page';
-import Areas from './areas/page';
 import OurTeam from './team/page';
 import WhyUs from './whyUs/page';
-import Clients from './clients/page';
 import RocketButton from '@/components/rocketButton/rocketButton';
-import Advantages from './advantages/page';
+import LandingPage from '@/components/landingPage/page';
+import OurModules from '@/components/modules/page';
+import Advantages from '@/components/advantages/page';
+import AboutUs from '@/components/aboutUs/page';
+import Areas from '@/components/areas/page';
+import Clients from '@/components/clients/page';
+import Brief from '@/components/brief/page';
+import Footer from '@/components/footer/page';
 
 export default function App() {
 
   return (
     <>
+      <NavBar />
       <LandingPage />
       <Projects />
       <OurModules />

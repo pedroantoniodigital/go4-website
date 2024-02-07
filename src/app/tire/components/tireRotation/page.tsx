@@ -7,7 +7,7 @@ const TireRotation = () => {
     <>
       <section className="bg-primary-dark py-4">
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-          <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+          <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center">
             <div className="lg:col-start-2">
               <AnimatedText
                 once

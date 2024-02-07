@@ -32,7 +32,7 @@ const TiresPage = () => {
           </div>
           <hr className="h-[3px] w-64 border-t-0 bg-white/15  mb-7" />
           <a target='_blank' href="https://api.whatsapp.com/send?phone=5511982568090&text=&source=&data=&app_absent=" className='flex flex-row w-full md:w-64 h-[50px] rounded-[100px] hover:bg-white transition-all duration-500 ease-in-out bg-white/35 drop-shadow-theme'>
-            <span className='flex hover:text-black transition-all duration-500 ease-in-out items-center justify-center w-full font-bold text-white h-full'>
+            <span className='flex hover:text-gray-700 transition-all duration-500 ease-in-out items-center justify-center w-full font-bold text-white h-full'>
               Entre em contato
             </span>
           </a>

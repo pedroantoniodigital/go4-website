@@ -7,16 +7,6 @@ import { Typewriter } from "react-simple-typewriter";
 const FuelReport = () => {
   return (
     <>
-      <div className="p-16">
-        <div className="flex felx-col items-center justify-center">
-          <span
-            className="rounded-full bg-indigo-500 px-2 py-1 text-white uppercase text-sm"
-          >
-            Relatorios e Dashboards
-          </span>
-        </div>
-      </div>
-
       <section className="bg-white">
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
@@ -25,7 +15,7 @@ const FuelReport = () => {
                 once
                 text="Dashboard"
                 el="h1"
-                className="text-2xl font-bold sm:text-3xl text-black text-center sm:text-left"
+                className="text-2xl font-bold sm:text-3xl text-gray-700 text-center sm:text-left"
               />
               <p className="mt-3 text-lg text-gray-600 text-center sm:text-left">
                 Possuimos um dashboard voltado á gestão de combustível, com diversos gráficos e interatividades, como visualização destes em tabela e planilhas de seus dados.

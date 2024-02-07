@@ -17,7 +17,7 @@ const TireLife = () => {
           once
           text="Módulo de Pneus"
           el="h1"
-          className="text-3xl text-center mt-6 font-bold text-black"
+          className="text-3xl text-center mt-6 font-bold text-gray-700"
         />
         <p className="text-center mt-6 text-lg font-light text-gray-600">
           Introdução ao modulo de Pneus da plataforma.

@@ -109,7 +109,7 @@ const OurTeam = () => {
             once
             text="Nosso time"
             el="h1"
-            className="text-3xl font-bold text-black"
+            className="text-3xl font-bold text-gray-700"
           />
           <p>Contamos com um time multidisciplinar de <b>especialistas</b> com vasta
             experiência no segmento da Manutenção,oferecendo serviços de <b>assessoria,</b>
