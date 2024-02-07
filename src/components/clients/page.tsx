@@ -9,6 +9,7 @@ import './index.css';
 import Image from "next/image";
 import NextArrow from "@/components/arrows/nextArrow";
 import PrevArrow from "@/components/arrows/prevArrow";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const clients = [
   {
@@ -62,12 +63,15 @@ const clients = [
 ]
 
 export default class SimpleSlider extends Component {
+
   render() {
+
+
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 5,
       centerMode: true,
       centerPadding: "60px",
       slidesToScroll: 1,
@@ -104,10 +108,10 @@ export default class SimpleSlider extends Component {
 
     return (
       <div id="clients" className=" flex flex-col items-center justify-center py-24 bg-gray-100">
-        <div style={{ width: "90%" }}> {/* Limitar a largura do contêiner do Slider */}
+        <div className="w-[90vw] md:w-[96vw]"> {/* Limitar a largura do contêiner do Slider */}
           <Slider {...settings} className="flex items-center justify-center">
-            {clients.map(c => (
-              <div className="flex hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
+            {clients.map((c, index) => (
+              <div key={index} className="flex hover:scale-105 py-4 transition-all duration-500 ease-in-out cursor-pointer flex-col overflow-hidden rounded-lg shadow-lg">
                 <div className="flex-shrink-0">
                   <Image
                     src={c.logo}
@@ -115,22 +119,19 @@ export default class SimpleSlider extends Component {
                     width={500}
                     height={100}
                     style={{
-                      maxWidth: "100%",
-                      height: '300px'
+                      margin: 'auto',
+                      maxWidth: "80%",
+                      height: '200px'
                     }}
                   />
                 </div>
-                <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                  <div className="flex-1">
-                    <a href="#" className="mt-2 block">
-                      <AnimatedText
-                        once
-                        text={c.occupation}
-                        el="h1"
-                        className="text-xl font-semibold text-gray-900"
-                      />
-                    </a>
-                  </div>
+                <div className="flex flex-1 flex-col justify-between text-center bg-white p-6">
+                  <AnimatedText
+                    once
+                    text={c.occupation}
+                    el="h1"
+                    className="text-sm lg:text-lg font-semibold text-gray-900"
+                  />
                 </div>
               </div>
             ))}

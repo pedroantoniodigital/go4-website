@@ -19,7 +19,9 @@ const FuelPage = () => {
                 "GESTÃO DE TROCA E REPOSIÇÃO DE LUBRIFICANTES",
                 "INDICADORES GERENCIAIS ( GRÁFICOS E RELATÓRIOS )",
               ]}
-              loop={Infinity}
+              cursor
+              cursorStyle="|"
+              loop
               typeSpeed={40}
               deleteSpeed={20}
               delaySpeed={3000}

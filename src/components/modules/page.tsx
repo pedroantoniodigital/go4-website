@@ -65,9 +65,9 @@ const OurModules = () => {
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-blue-700 text-lg font-bold">03</span>
-                <button onClick={() => router.push("/screens/fleet")} className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/fleet")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Gestão de Documentos ( Tacógrafo )
                 </button>
               </div>
@@ -311,9 +311,9 @@ const OurModules = () => {
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-red-700 text-lg font-bold">06</span>
-                <button onClick={() => router.push("/screens/tire")} className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/tire")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Visualização Amplicada / Gestão de Custos
                 </button>
               </div>
@@ -397,7 +397,7 @@ const OurModules = () => {
               diam bibendum fringilla.
             </div>
             <div className="mt-10">
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">01</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Mapa de Localização da Frota
@@ -405,7 +405,7 @@ const OurModules = () => {
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">02</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Rastreamento Híbrido ( GPRS E SAT )
@@ -413,7 +413,7 @@ const OurModules = () => {
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-pink-700 text-lg font-bold">03</span>
                 <button onClick={() => router.push("/screens/tracker")} className="ml-4 text-left hover:underline hover:cursor-pointer">
                   Captura de Horas/KM Automática

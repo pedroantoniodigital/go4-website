@@ -1,7 +1,5 @@
 'use client'
 
-import { NumberTransition } from '@/components/countUp';
-import AnimatedText from '@/components/animation/page';
 import { Typewriter } from 'react-simple-typewriter';
 
 const LandingPage = () => {
@@ -25,7 +23,9 @@ const LandingPage = () => {
               "CHECKLIST NO CAMPO", 
               "GERENCIAMENTO TOTAL DE FROTAS", 
             ]}
-            loop={Infinity}
+            loop
+            cursor
+            cursorStyle="|"
             typeSpeed={40}
             deleteSpeed={20}
             delaySpeed={3000}

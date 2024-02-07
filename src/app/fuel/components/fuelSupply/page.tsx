@@ -1,13 +1,10 @@
 "use client"
 
 import AnimatedText from "@/components/animation/page"
-import MapIcon from '@mui/icons-material/Map';
-import { Typewriter } from "react-simple-typewriter";
 
 const FuelSupply = () => {
   return (
     <>
-
       <section className="bg-primary-dark py-4">
         <div className="container max-w-xl p-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div className="grid lg:gap-10 lg:grid-cols-2 lg:items-center">

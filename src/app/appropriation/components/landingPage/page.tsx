@@ -1,7 +1,5 @@
 "use client"
 
-import AnimatedText from "@/components/animation/page"
-import MapIcon from '@mui/icons-material/Map';
 import { Typewriter } from "react-simple-typewriter";
 
 const AppropriationPage = () => {
@@ -18,6 +16,8 @@ const AppropriationPage = () => {
                 "APROPRIAÇÃO DE HORAS MANUAL",
                 "APROPRIAÇÃO DE HORAS AUTOMÁTICA",
               ]}
+              cursor
+              cursorStyle="|"
               loop={Infinity}
               typeSpeed={40}
               deleteSpeed={20}

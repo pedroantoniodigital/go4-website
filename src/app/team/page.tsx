@@ -128,7 +128,7 @@ const OurTeam = () => {
           <Slider {...settings} className="flex items-center justify-center">
 
             {languages.map((l, index) => (
-              <div className="flex min-h-[380px] border-primary-dark/10 border-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col rounded-lg py-4">
+              <div key={index} className="flex min-h-[100px] my-4 border-primary-dark/10 border-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col rounded-lg py-4">
                 <div
                   style={{
                     display: "flex",
@@ -141,6 +141,7 @@ const OurTeam = () => {
                     width={80}
                     height={80}
                     style={{
+                      marginTop: '2rem',
                       maxWidth: "80px",
                       height: '80px'
                     }}
@@ -153,9 +154,6 @@ const OurTeam = () => {
                     el="h1"
                     className="text-xl font-semibold text-gray-900"
                   />
-                  <p className="mt-3 text-base text-gray-500">
-                    {l.text}
-                  </p>
                 </div>
               </div>
             ))}

@@ -90,7 +90,7 @@ const Areas = () => {
         <div className='h-fit gap-4'>
           <Slider {...settings} className="flex items-center justify-center">
             {areas.map((l, index) => (
-              <div className="flex my-6 border-white/10 bg-white/10 5 hover:drop-shadow-theme border-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col rounded-lg p-4">
+              <div key={index} className="flex my-6 border-white/10 bg-white/10 5 hover:drop-shadow-theme border-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer flex-col rounded-lg p-4">
                 <div
                   style={{
                     display: "flex",
