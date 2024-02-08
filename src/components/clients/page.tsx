@@ -9,7 +9,6 @@ import './index.css';
 import Image from "next/image";
 import NextArrow from "@/components/arrows/nextArrow";
 import PrevArrow from "@/components/arrows/prevArrow";
-import { useMediaQuery, useTheme } from "@mui/material";
 
 const clients = [
   {
