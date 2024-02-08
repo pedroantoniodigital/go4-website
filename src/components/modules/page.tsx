@@ -16,8 +16,7 @@ const OurModules = () => {
           <div className="flex flex-col gap-4 w-[100%] lg:w-[42%] text-center rounded-lg h-[300px] text-slate-900 p-10 mt-10">
             {/* Conteúdo da primeira div */}
             <span className="font-bold text-3xl">Conheça nossos módulos</span>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              Tenha uma breve introdução sobre algumas ferramentas e funcionalidades de cada módulo
           </div>
           {/* PRIMEIRA DIV */}
           {/* PRIMEIRO MODULO */}
@@ -42,11 +41,7 @@ const OurModules = () => {
               </IconButton> */}
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Como funciona o cadastro de frota, composição do custo hora destes e entre outras funcionalidades
             </div>
             <div className="mt-10">
               <div className="text-gray-600">
@@ -103,11 +98,7 @@ const OurModules = () => {
               />
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Entenda como funciona o controle de horas rodadas pelos equipamentos e como administra-las.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
@@ -154,11 +145,7 @@ const OurModules = () => {
               />
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Obtenha informações iniciais sobre a funcionalidade do módulo de manutenções.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
@@ -204,11 +191,7 @@ const OurModules = () => {
               />
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Explore como funciona nosso controle de combustivel e lubrificante e o consumo destes pela sua frota.
             </div>
             <div className="mt-10">
               <div className="text-gray-600">
@@ -264,11 +247,7 @@ const OurModules = () => {
               />
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Veja como funciona a gestão de pneus de nosso sistema.
             </div>
             <div className="mt-10">
               <div className="text-gray-600">
@@ -340,7 +319,7 @@ const OurModules = () => {
               />
               <AnimatedText
                 once
-                text="Gestão de Locação de Frota"
+                text="Gestão de Locação de Frota - Desktop"
                 el="h1"
                 className="text-yellow-400 text-xl font-bold"
               />
@@ -353,19 +332,19 @@ const OurModules = () => {
               diam bibendum fringilla.
             </div>
             <div className="mt-10">
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-yellow-400 text-lg font-bold">01</span>
-                <span className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/location")} className="ml-4 hover:underline hover:cursor-pointer">
                   Gestão de Locação Locador
-                </span>
+                </button>
               </div>
               <hr className="border-b border-dashed border-gray-300 my-2" />
 
-              <div className="text-gray-600">
+              <div className="text-gray-600 flex flex-row">
                 <span className="text-yellow-400 text-lg font-bold">02</span>
-                <span className="ml-4 hover:underline hover:cursor-pointer">
+                <button onClick={() => router.push("/screens/location")} className="ml-4 hover:underline hover:cursor-pointer">
                   Gestão de Locação Locatário
-                </span>
+                </button>
               </div>
             </div>
           </div>
@@ -390,11 +369,7 @@ const OurModules = () => {
               </div>
             </div>
             <div className="text-gray-500 mt-6 text-center md:text-left md:w-[50%]">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-              Vestibulum vitae diam neque.
-              Phasellus ac augue porttitor
-              diam bibendum fringilla.
+              Entenda como administramos a localização dos equipamentos de sua frota pela latitude e longitude emitida pelos seus rastreadores.
             </div>
             <div className="mt-10">
               <div className="text-gray-600 flex flex-row">
